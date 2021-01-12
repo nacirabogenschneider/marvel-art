@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(32, 32, 32);
+  flex-direction: column;
+}
+h1 {
+  font-size: 250px;
+  font-family: "Jockey One", sans-serif;
+  background-image: url("https://panininewsroom.de/wp-content/uploads/MediaFiles-Web/2019_web/marvel-neustart-newsroom.jpg");
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @media (max-width: 1176px) {
+    font-size: 200px;
+  }
+  @media (max-width: 936px) {
+    font-size: 170px;
+  }
+  @media (max-width: 791px) {
+    font-size: 150px;
+  }
+  @media (max-width: 711px) {
+    font-size: 120px;
+  }
+  @media (max-width: 561px) {
+    font-size: 80px;
+  }
+  @media (max-width: 376px) {
+    font-size: 60px;
+  }
+}
+.header_toolbar {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  background-color: rgb(24, 24, 24);
+  justify-content: center;
+  align-items: center;
+}

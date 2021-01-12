@@ -1,0 +1,6 @@
+<section class='card-list'>
+    <div class=card-list_header>
+        <p>HELLO: </p>{{search}}</div>
+        <div class='content_search' ><input (keyup)="onChange(name.value)" #name type="text" placeholder="Search Hero" name='search'     /></div>
+    <Card  *ngFor="let hero of character" [hero]="hero" [imgUrl]="hero.thumbnail"></Card>
+</section>
