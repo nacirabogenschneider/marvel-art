@@ -25,3 +25,29 @@ input {
     outline-color: rgb(206, 0, 0);
   }
 }
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.pagination a.active {
+  background-color: rgb(252, 177, 15);
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: rgba(24, 24, 24, 0.749);
+  color: white;
+}

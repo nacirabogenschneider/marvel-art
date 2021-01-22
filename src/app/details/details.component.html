@@ -1,0 +1,26 @@
+<article class="container">
+    <header class="conten-header">
+        <nav class="content-header-nav">
+            <span>10 Follower</span>
+            <i class="material-icons text-shadow padding">check_circle_outline</i>
+            <i class="material-icons text-shadow padding">chat_bubble_outline</i>
+        </nav>
+        <h1 *ngIf='hero' class="content-header-name">{{hero[0].name}}</h1>
+        <img class="content-header-image" src="../../assets/images/header_2.jpg" alt="">
+       <div class="content-header-avatar">
+            <img class="avatar" [src]="hero[0]?.thumbnail.path+'.'+hero[0]?.thumbnail.extension" alt="">
+       </div>
+    </header>
+    <section class="content">
+        <div *ngIf="hero" class="description">
+           <p *ngFor="let description of heroDescription" class="card_description">{{description.description}}</p>
+        </div>
+    </section>
+    <section class="images">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+    </section>
+</article>
+

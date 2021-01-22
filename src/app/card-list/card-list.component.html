@@ -1,4 +1,23 @@
 <section class='card-list'>
-    <div class='content_search' ><input (keyup)="onChange(name.value)" #name type="text" placeholder="search hero" name='search'/></div>
-    <Card  *ngFor="let hero of character" [hero]="hero" [imgUrl]="hero.thumbnail"></Card>
+    <div class='content_search' ><input (keyup.enter)="onChange(name)" #name type="text" placeholder="search hero" name='search'/></div>
+    <Card  *ngFor="let hero of db_heros" [hero]="hero" [imgUrl]="hero.thumbnail"></Card>
+    <footer class="footer">
+        <div class="pagination">
+            <a [class.active]="isActive===1" (click)='pageChange(1)'>1</a>
+            <a [class.active]="isActive===2" (click)='pageChange(2)'>2</a>
+            <a [class.active]="isActive===3" (click)='pageChange(3)'>3</a>
+            <a [class.active]="isActive===4" (click)='pageChange(4)'>4</a>
+            <a [class.active]="isActive===5" (click)='pageChange(5)'>5</a>
+            <a [class.active]="isActive===6" (click)='pageChange(6)'>6</a>
+            <a [class.active]="isActive===7" (click)='pageChange(7)'>7</a>
+            <a [class.active]="isActive===8" (click)='pageChange(8)'>8</a>
+            <a [class.active]="isActive===9" (click)='pageChange(9)'>9</a>
+            <a [class.active]="isActive===10" (click)='pageChange(10)'>10</a>
+            <a [class.active]="isActive===11" (click)='pageChange(11)'>11</a>
+            <a [class.active]="isActive===12" (click)='pageChange(12)'>12</a>
+            <a [class.active]="isActive===13" (click)='pageChange(13)'>13</a>
+            <a [class.active]="isActive===14" (click)='pageChange(14)'>14</a>
+            <a [class.active]="isActive===15" (click)='pageChange(15)'>15</a> 
+          </div>
+</footer>
 </section>

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { query } from '@angular/animations';
+import { Component, ContentChild, OnInit } from '@angular/core';
 
 
 @Component({
@@ -9,4 +10,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'marvel-art';
+
+ 
+
+
+
 }

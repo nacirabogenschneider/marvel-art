@@ -2,6 +2,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "baseUrl": "./",
@@ -24,6 +25,7 @@
     ]
   },
   "angularCompilerOptions": {
+    "experimentalDecorators":true,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
