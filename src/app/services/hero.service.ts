@@ -1,3 +1,4 @@
+import { environment } from './../../environments/environment';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
@@ -11,7 +12,7 @@ export class HeroService {
     'Content-Type': 'application/json',
     'Accept': 'application/json',
     'Access-Control-Allow-Headers': 'Content-Type',
-    'Authorization':'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNjEwNTU3NTc3fQ.-mvr5Ab2P_6MIBtDRUh3dNwkG9SasXvfWgGMO7kkPFs'
+    'Authorization':`Bearer ${environment.mongodb.Bearer}`
   }
   private httpOptions = {
     headers: new HttpHeaders(this.headerDict)
